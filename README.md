@@ -1,112 +1,99 @@
-# 🚀 Spring Boot + Hibernate + Kafka + Redis + Docker
+# 🚀 Spring Boot Kafka Redis Docker Platform
 
-A scalable **backend microservices application** built using **Spring Boot, Hibernate (JPA), Apache Kafka, Redis, and Docker**.
-This project demonstrates **event-driven architecture**, **data persistence**, and **high-performance system design**.
-
----
-
-## 🧩 Tech Stack
-
-* **Backend**: Spring Boot, Spring MVC
-* **Persistence**: Hibernate / JPA
-* **Messaging**: Apache Kafka
-* **Caching**: Redis
-* **Database**: MySQL / PostgreSQL (configurable)
-* **Containerization**: Docker, Docker Compose
-* **Build Tool**: Maven
+![Java](https://img.shields.io/badge/Java-17-orange)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-3.x-brightgreen)
+![Kafka](https://img.shields.io/badge/Kafka-EventDriven-black)
+![Redis](https://img.shields.io/badge/Redis-Caching-red)
+![Docker](https://img.shields.io/badge/Docker-Containerized-blue)
+![MySQL](https://img.shields.io/badge/MySQL-Database-blue)
 
 ---
 
-## ⚙️ Features
+## ⚡ What is this?
 
-* ✅ RESTful APIs for user management
-* ✅ Kafka Producer for event publishing
-* ✅ Redis caching for performance optimization
-* ✅ Hibernate ORM for database operations
-* ✅ Dockerized application setup
-* ✅ Layered architecture (Controller → Service → Repository)
+A **containerized backend system** demonstrating:
 
----
-
-## 🏗️ Architecture
-
-* **Controller Layer** → Handles API requests
-* **Service Layer** → Business logic
-* **Repository Layer** → Database access using JPA
-* **Kafka Producer** → Sends events asynchronously
-* **Redis Cache** → Improves response time
+- REST APIs using Spring Boot
+- Database operations using Hibernate (JPA)
+- Event-driven communication using Kafka
+- High-performance caching using Redis
+- Fully dockerized environment for easy setup
 
 ---
 
-## 🚀 Getting Started
+## 🧠 Why this project matters
 
-### 1️⃣ Clone the repository
+This is NOT just a basic CRUD app.
 
-```bash id="j1x2aa"
-git clone https://github.com/Paraselli/Springboot-hibernate-kafka-redis-docker.git
-cd Springboot-hibernate-kafka-redis-docker
-```
+It demonstrates:
 
----
-
-### 2️⃣ Start services using Docker
-
-```bash id="l7v4pq"
-docker-compose up -d
-```
+- Event-driven architecture using Kafka
+- Performance optimization using Redis caching
+- Clean backend layering (Controller → Service → Repository)
+- Containerized deployment using Docker
+- Real-world backend integration patterns
 
 ---
 
-### 3️⃣ Run the application
+## 🌐 Live Links
 
-```bash id="0x4f9t"
-mvn clean install
-mvn spring-boot:run
-```
+- 🔗 GitHub Repo: https://github.com/Paraselli/springboot-hibernate-kafka-redis-docker
+- 📄 API Docs: http://localhost:8080/swagger-ui.html (if enabled)
 
 ---
 
-## 📡 API Example
+## 🏗️ Architecture Overview
 
-### Create User
-
-```http id="9l8n9o"
-POST /users
-```
-
-```json id="8y7m3d"
-{
-  "name": "Ram",
-  "email": "ram@example.com"
-}
-```
-
----
-
-## 🔥 Use Cases
-
-* Event-driven backend systems
-* High-performance APIs with caching
-* Scalable microservices architecture
-* Asynchronous processing using Kafka
+Client (Postman / UI)  
+↓  
+Spring Boot REST API  
+↓  
+Service Layer (Business Logic)  
+↓  
+Kafka Producer → Event Streaming → Kafka Consumer  
+↓  
+Redis (Caching with TTL)  
+↓  
+MySQL (Persistent Storage)  
+↓  
+Docker (Containerized Environment)
 
 ---
 
-## 📌 Future Enhancements
+## 🔄 End-to-End Flow
 
-* Add Kafka Consumer for event processing
-* Implement Circuit Breaker (Resilience4j)
-* Add API Gateway (Spring Cloud)
-* Deploy to Kubernetes
-
----
-
-## 👨‍💻 Author
-
-**Ram Paraselli**
-🔗 linkedin.com/in/ram-paraselli
-🔗 github.com/Paraselli
+1. Client sends API request
+2. Controller processes request
+3. Service layer handles business logic
+4. Data stored in MySQL via Hibernate
+5. Event published to Kafka
+6. Consumer listens and processes event
+7. Frequently accessed data cached in Redis
 
 ---
 
-## ⭐ Star this repo if you find it useful!
+## 🔥 Key Features
+
+- 🔐 REST API with clean architecture
+- ⚡ Kafka-based async communication
+- 🧠 Redis caching with TTL strategy
+- 🗄️ MySQL with Hibernate (JPA)
+- 🐳 Dockerized multi-service setup
+- 📦 Scalable backend design
+
+---
+
+## 🛠 Tech Stack
+
+| Layer     | Technologies           |
+|----------|----------------------|
+| Backend   | Java 17, Spring Boot |
+| ORM       | Hibernate (JPA)      |
+| Messaging | Kafka                |
+| Cache     | Redis                |
+| Database  | MySQL                |
+| DevOps    | Docker               |
+
+---
+
+## 📁 Project Structure
