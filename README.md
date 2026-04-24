@@ -62,24 +62,24 @@ Docker (Containerized Environment)
 
 ## 🔄 End-to-End Flow
 
-1. Client sends API request
-2. Controller processes request
-3. Service layer handles business logic
-4. Data stored in MySQL via Hibernate
-5. Event published to Kafka
-6. Consumer listens and processes event
-7. Frequently accessed data cached in Redis
+1. Client sends API request  
+2. Controller processes request  
+3. Service layer handles business logic  
+4. Data stored in MySQL via Hibernate  
+5. Event published to Kafka  
+6. Consumer listens and processes event  
+7. Frequently accessed data cached in Redis  
 
 ---
 
 ## 🔥 Key Features
 
-- 🔐 REST API with clean architecture
-- ⚡ Kafka-based async communication
-- 🧠 Redis caching with TTL strategy
-- 🗄️ MySQL with Hibernate (JPA)
-- 🐳 Dockerized multi-service setup
-- 📦 Scalable backend design
+- 🔐 REST API with clean architecture  
+- ⚡ Kafka-based async communication  
+- 🧠 Redis caching with TTL strategy  
+- 🗄️ MySQL with Hibernate (JPA)  
+- 🐳 Dockerized multi-service setup  
+- 📦 Scalable backend design  
 
 ---
 
